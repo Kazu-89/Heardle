@@ -8,7 +8,7 @@ const HOST = '0.0.0.0';
 
 const server = http.createServer((req, res) => {
   // Parse the requested file path
-  let filePath = path.join(__dirname, req.url === '/' ? 'Heardle.html' : req.url);
+  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
   
   // Get the file extension
   const extname = path.extname(filePath);
